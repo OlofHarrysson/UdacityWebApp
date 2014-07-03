@@ -6,4 +6,8 @@ threadsafe: true
 
 handlers:
 - url: /.*
-  script: main.application
+  script: blog.application
+
+libraries:
+- name: jinja2
+  version: latest

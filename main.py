@@ -1,6 +1,7 @@
 import webapp2
 from hw import rot13
 from hw import formvalidation
+from hw import blog
 
 # form ='''
 # <form method="post">
@@ -107,5 +108,5 @@ application = webapp2.WSGIApplication([
     ('/', MainPage),
     ('/encrypter', Encrypter),
     ('/signup', Signup),
-    ('/welcome', Welcome)
+    ('/welcome', Welcome),
 ], debug=True)

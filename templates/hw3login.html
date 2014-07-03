@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Login!</h1>
+<br>
+
+<form method="post">
+	<label>Username</label>
+	<input name="username" value={{username}}>
+	<br>
+
+	<label>Password</label>
+	<input name="password" type="password">
+	<br>
+
+	<input type="submit">
+	<br>
+
+	<h4>{{error_msg}}</h4>
+
+</form>
+
+<a href="/blog/signup">Signup</a>
+{{already_user}}
+{% if already_user %}
+	<a href="/blog/logout">Delete user</a>
+{% endif %}
+
+
+{% endblock %}
